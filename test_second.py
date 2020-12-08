@@ -7,4 +7,4 @@ def test_method1():
     assert add(3,5) == 8
 
 def test_method2():
-    assert add(15,5) == 21 
+    assert add(15,5) == 20
