@@ -3,13 +3,9 @@
 # Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
-Introduction:
 
-I created a simple add function to get more insight in how Azure Dev Ops is working. When I let test_method2() fail on purpose the pipeline exists with ##[error]Bash exited with code '1'. Therefore in Azure Dev Ops an overview of Tests (which ones are fine and which ones are not) and Code Coverage is missing. I would expect that overview Test and Code Coverage is still provided in case of a failing test. To summarize, it's fine that a test fails but this should be reported and the process should not be stopped.
 
-Note that when I repair the test, i.e. 'def test_method2(): assert add(15,5) == 20 ' the pipeline works as expected.
 
-My question is what is needed to make sure that overview of Tests and Code Coverage is still provided in case of failing tests?
 
 calc_lean.py:
 
