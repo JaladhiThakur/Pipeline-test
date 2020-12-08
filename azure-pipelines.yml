@@ -16,7 +16,7 @@ calc_lean.py:
 def add(x, y):
     """Add Function"""
     return x + y
-test_calc_lean.py:
+test.py:
 
 import pytest
 from calc_lean import add
@@ -46,8 +46,7 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Install dependencies'
+    displayName: 'Install dependencies'
 
 - script: |
     pip install pytest 
